@@ -1,4 +1,6 @@
 SET GLOBAL local_infile=1;
+GRANT ALL PRIVILEGES ON schoolar.* TO 'chatree'@'localhost';
+FLUSH PRIVILEGES;
 
 load data local infile 'schoolar/student_mock.csv' 
 into table Student 
@@ -21,5 +23,6 @@ into table TransactionRecord
 fields terminated by ',';
 
 load data local infile 'schoolar/pinning_mock.csv' 
-into table Student 
+into table Pinning 
 fields terminated by ',';
+

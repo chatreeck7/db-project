@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS Provider(
     s_type ENUM("MP","YP"),
     CONSTRAINT FK_s_type FOREIGN KEY(s_type) 
     REFERENCES Subscription(s_type) ON UPDATE CASCADE ON DELETE CASCADE 
-);
+); 
 -- Scholarship Entity 
 CREATE TABLE IF NOT EXISTS Scholarship (
 	scholarship_id VARCHAR(10) PRIMARY KEY,
@@ -54,7 +54,6 @@ CREATE TABLE IF NOT EXISTS Scholarship (
 	CONSTRAINT FK_u_id_provider FOREIGN KEY(u_id) 
 	REFERENCES Provider(u_id) ON UPDATE CASCADE ON DELETE RESTRICT
 );
-
 -- Pinning Relationship
 CREATE TABLE IF NOT EXISTS Pinning(
 	u_id VARCHAR(10),

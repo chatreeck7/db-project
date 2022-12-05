@@ -1,0 +1,25 @@
+-- DELETE FROM Subscription WHERE s_type = "MP";
+-- INSERT INTO Subscription(s_type, description, price)
+-- VALUES(
+-- 	"MP",
+--     "monthly paid",
+--     299 
+-- );
+-- INSERT INTO Provider(u_id, email, tel, username, user_password
+-- 			,address, fullname, schoolar_credit, approve_status, visibility
+--             ,next_payment_date, s_type)
+-- VALUES(
+-- 	'0000000061', 'jew4@gmail.com', '088-888-8455', 'chatree4', '1HMFH6&8z&Of',
+--     "123/126", "Nikkita Vo", 1,	FALSE, FALSE, "2022-12-11 10:11:12", "MP"
+-- );
+-- INSERT INTO Scholarship( scholarship_id, scholarship_name, detail
+-- 						,deadline_apply, requirement, web_link, u_id)
+-- VALUES(
+-- 	"0000000013", "ทุนอุดหนุนการศึกษา", "sdawdfddfgsdf",
+--     "2022-11-12",
+--     "GPA > 3.00 CU-Tep > 100",
+--     "https://asd.com",
+--     "0000000013"
+-- );
+-- DELETE FROM Provider WHERE u_id = "0000000013";
+-- SELECT * FROM Subscription;
